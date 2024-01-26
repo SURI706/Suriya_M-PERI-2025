@@ -1,0 +1,83 @@
+#task
+#Example
+
+#operations 1, 2, 10], [3, 5, 10
+
+#The array has 5 elements that all start at 0. In the first operation, and 10 to the first 2 elements. Now the array is 10, 10, 0, 0, 0. In the second operation, add 10 to the last 3 elements (3-5). Now the array is 10, 10, 10, 10, 10 and the average is 10. Sincd 10 is already an integer value, it does not need to be rounded.
+
+#Function Description
+
+#Complete the solve function in the editor below.
+
+#solve has the following parameters:
+
+#int n the number of candy jars.
+
+#int operations[m][3]: a 2-dimensional array of operations
+
+#Returns
+
+#int the floor of the average number of canidies in all jars
+
+#Input Format
+
+#The first line contains two integers, 71 and m, separated by a single space. m lines follow. Each of them contains three integers, a, b, and k, separated by spaces,
+
+#Constraints
+
+#3≤ n ≤10
+
+#1≤ m ≤100
+
+#0<k<10
+
+#Sample Input
+
+#STOIN
+
+#53
+
+#Function
+
+#n5, operations[] size 3
+
+#12 160 25 160
+
+#operations (1, 2, 100], [2, 5, 188], [3, 4, 10011
+
+#14 188
+
+#Sample Output
+#ilanation
+
+#lally each of the jars contains candies
+
+#First operation: 180 188 0 99
+
+#Second operation:
+
+#160 298 199 199 100
+
+#Third operation:
+
+#166 268 200 200 100
+
+#Total 800 Average 800/5160
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+ {
+uint64_t n,m,a,b,k,i;
+cin >> n >> m;
+uint64_t sum=0;
+while(m--)
+{
+cin >> a >>b >> k;
+sum+=(b-a+1)*k;
+}
+uint64_t z;
+z=floor(sum/n);
+}
+cout << z;
